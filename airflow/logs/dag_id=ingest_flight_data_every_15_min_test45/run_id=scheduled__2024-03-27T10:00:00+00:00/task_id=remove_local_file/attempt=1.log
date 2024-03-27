@@ -1,0 +1,19 @@
+[2024-03-27T18:21:57.894+0800] {logging_mixin.py:150} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-27T18:21:57.908+0800] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ingest_flight_data_every_15_min_test45.remove_local_file scheduled__2024-03-27T10:00:00+00:00 [queued]>
+[2024-03-27T18:21:57.921+0800] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ingest_flight_data_every_15_min_test45.remove_local_file scheduled__2024-03-27T10:00:00+00:00 [queued]>
+[2024-03-27T18:21:57.922+0800] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2024-03-27T18:21:57.943+0800] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): remove_local_file> on 2024-03-27 10:00:00+00:00
+[2024-03-27T18:21:57.955+0800] {standard_task_runner.py:57} INFO - Started process 2261 to run task
+[2024-03-27T18:21:57.960+0800] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ingest_flight_data_every_15_min_test45', 'remove_local_file', 'scheduled__2024-03-27T10:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/flights_ingestion_dag.py', '--cfg-path', '/tmp/tmp68yx2w05']
+[2024-03-27T18:21:57.964+0800] {standard_task_runner.py:85} INFO - Job 13: Subtask remove_local_file
+[2024-03-27T18:21:57.987+0800] {logging_mixin.py:150} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-27T18:21:58.042+0800] {task_command.py:410} INFO - Running <TaskInstance: ingest_flight_data_every_15_min_test45.remove_local_file scheduled__2024-03-27T10:00:00+00:00 [running]> on host 51fbd2853be7
+[2024-03-27T18:21:58.060+0800] {logging_mixin.py:150} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-27T18:21:58.165+0800] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ingest_flight_data_every_15_min_test45' AIRFLOW_CTX_TASK_ID='remove_local_file' AIRFLOW_CTX_EXECUTION_DATE='2024-03-27T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-27T10:00:00+00:00'
+[2024-03-27T18:21:58.169+0800] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-27T18:21:58.170+0800] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'rm /opt/***/2024-03-27_18:00:00.csv']
+[2024-03-27T18:21:58.191+0800] {subprocess.py:86} INFO - Output:
+[2024-03-27T18:21:58.199+0800] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-27T18:21:58.243+0800] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=ingest_flight_data_every_15_min_test45, task_id=remove_local_file, execution_date=20240327T100000, start_date=20240327T102157, end_date=20240327T102158
+[2024-03-27T18:21:58.293+0800] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-03-27T18:21:58.319+0800] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

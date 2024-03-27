@@ -1,0 +1,19 @@
+[2024-03-27T19:29:49.135+0800] {logging_mixin.py:150} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-27T19:29:49.152+0800] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_hourly_table_test45.delay_bash_task scheduled__2024-03-27T10:00:00+00:00 [queued]>
+[2024-03-27T19:29:49.169+0800] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_hourly_table_test45.delay_bash_task scheduled__2024-03-27T10:00:00+00:00 [queued]>
+[2024-03-27T19:29:49.170+0800] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2024-03-27T19:29:49.205+0800] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): delay_bash_task> on 2024-03-27 10:00:00+00:00
+[2024-03-27T19:29:49.245+0800] {standard_task_runner.py:57} INFO - Started process 1399 to run task
+[2024-03-27T19:29:49.272+0800] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'update_hourly_table_test45', 'delay_bash_task', 'scheduled__2024-03-27T10:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/flights_ingestion_dag.py', '--cfg-path', '/tmp/tmpr8pbdbbv']
+[2024-03-27T19:29:49.288+0800] {standard_task_runner.py:85} INFO - Job 5: Subtask delay_bash_task
+[2024-03-27T19:29:49.341+0800] {logging_mixin.py:150} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-27T19:29:49.483+0800] {task_command.py:410} INFO - Running <TaskInstance: update_hourly_table_test45.delay_bash_task scheduled__2024-03-27T10:00:00+00:00 [running]> on host 2ed6da3b8fe0
+[2024-03-27T19:29:49.518+0800] {logging_mixin.py:150} WARNING - /home/***/.local/lib/python3.9/site-packages/***/utils/sqlalchemy.py:124 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-03-27T19:29:49.647+0800] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_hourly_table_test45' AIRFLOW_CTX_TASK_ID='delay_bash_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-27T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-27T10:00:00+00:00'
+[2024-03-27T19:29:49.650+0800] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-27T19:29:49.651+0800] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'sleep 5s']
+[2024-03-27T19:29:49.671+0800] {subprocess.py:86} INFO - Output:
+[2024-03-27T19:29:54.677+0800] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-27T19:29:54.722+0800] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=update_hourly_table_test45, task_id=delay_bash_task, execution_date=20240327T100000, start_date=20240327T112949, end_date=20240327T112954
+[2024-03-27T19:29:54.789+0800] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-03-27T19:29:54.829+0800] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check
