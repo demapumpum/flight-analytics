@@ -5,11 +5,6 @@ Flight Analytics is an end-to-end data pipeline that serves hourly and daily fli
 ![[Dashboard](https://lookerstudio.google.com/reporting/b45cbd84-1db9-46cb-b454-6db393eb282e)](guides/images/sample_preview1.png)
 
 
-## Architecture 👷
-
-![](guides/images/Architecture_2.png)
-
-
 ## Technologies 👨‍💻
 
 This pipeline is hosted on Google Cloud Platform (GCP) and utilizes the following technologies:
@@ -22,6 +17,11 @@ While the following tools are used to setup infrastructure, orchestrate workflow
 - Terraform - as the IaC tool used to set up the Google Cloud Storage bucket and the BigQuery datasets.
 - Airflow with Docker - as the orchestrator to manage batch processing workflows packaged in a containerization tool (Docker).
 - Data Build Tool (dbt) - for transforming raw data from in the data warehouse.
+
+
+## Architecture 👷
+
+![](guides/images/Architecture_2.png)
 
 
 ## Data Pipeline 🔧
