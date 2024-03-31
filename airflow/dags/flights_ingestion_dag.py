@@ -53,7 +53,7 @@ start = datetime(2024, 3, 10, tzinfo=local_tz)
 
 # DAG to ingest flight data from the API every 15 minutes to a GCS bucket
 ingest_flight_data_every_15_min = DAG(
-    "ingest_flight_data_every_15_min_test46",
+    "ingest_flight_data_every_15_min",
     catchup=False,
     start_date=start,
     schedule_interval='*/15 * * * *'
@@ -91,7 +91,7 @@ with ingest_flight_data_every_15_min:
 
 # DAG to update the hourly external table in BigQuery every hour using data from the GCS bucket
 update_hourly_external_table = DAG(
-    "update_hourly_table_test45",
+    "update_hourly_table",
     catchup=False,
     start_date=start,
     schedule_interval='0 * * * *'
@@ -135,7 +135,7 @@ with update_hourly_external_table:
 
 # DAG to update the daily external table in BigQuery every hour using data from the GCS bucket
 update_daily_external_table = DAG(
-    "update_daily_table_test45",
+    "update_daily_table",
     catchup=False,
     start_date=start,
     schedule_interval='0 * * * *'
