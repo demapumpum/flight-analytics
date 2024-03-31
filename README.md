@@ -1,6 +1,6 @@
 # Flight Analytics 🛫
 
-Flight Analytics is an end-to-end data pipeline that serves hourly and daily flight analytics over  Ninoy Aquino International Airport (NAIA) that displays metrics such as number of flights, the most common airlines, and the most common origin and destination airport of flights in the past hour. The location or bounded area can be configured but by default the pipeline pulls flight data around NAIA.
+Flight Analytics is an end-to-end data pipeline that serves hourly and daily flight analytics over Ninoy Aquino International Airport (NAIA) and displays metrics such as number of flights, the most common airlines, and the most common origin and destination airport of flights in the past hour. The location or bounded area can be configured but by default the pipeline pulls flight data around NAIA.
 
 ## Preview 🌏
 ![](guides/images/sample_preview1.png)
