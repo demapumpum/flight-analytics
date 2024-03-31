@@ -1,24 +1,24 @@
 variable "credentials" {
   description = "My Credentials"
-  default     = "/home/iandemavivas/.google/credentials/flight_analytics.json"
+  default     = "/home/<username>/.google/credentials/<your-service-account-key-file>.json"
 }
 
 
 variable "project" {
   description = "Project ID"
-  default     = "flight-analytics-418504"
+  default     = "<your-gcp-project-id>"
 }
 
 
 variable "region" {
   description = "Region"
-  default     = "us-central1-c"
+  default     = "<your-project-region>" # e.g. us-central1-c
 }
 
 
 variable "location" {
   description = "Project Location"
-  default     = "US"
+  default     = "<your-project-location>" # e.g. US
 }
 
 
