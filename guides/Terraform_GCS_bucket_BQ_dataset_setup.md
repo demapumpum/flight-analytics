@@ -5,7 +5,7 @@
 ```tf
 variable "credentials" {
   description = "My Credentials"
-  default     = "/home/<username>/.google/credentials/flight_analytics.json"
+  default     = "/home/<username>/.google/credentials/<your-service-account-key-file>.json"
 }
 
 
