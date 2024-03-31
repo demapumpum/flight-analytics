@@ -2,14 +2,12 @@ version: 2
 
 sources:
   - name: staging
-    database: flight-analytics-418504
+    database: <your-GCP-Project-ID>
     schema: flights_stg
 
     tables:
       - name: external_table_hourly_flights
       - name: external_table_daily_flights
-      - name: external_table_airports_lookup
-      - name: external_table_airlines_lookup
 
 models:
     - name: stg_hourly_flights
