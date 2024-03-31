@@ -2,7 +2,7 @@
 
 Flight Analytics is an end-to-end data pipeline that serves hourly and daily flight analytics over  Ninoy Aquino International Airport (NAIA) that displays metrics such as number of flights, the most common airlines, and the most common origin and destination airport of flights in the past hour. The location or bounded area can be configured but by default the pipeline pulls flight data around NAIA.
 
-![[Dashboard](https://lookerstudio.google.com/reporting/b45cbd84-1db9-46cb-b454-6db393eb282e)](*insert link)
+![[Dashboard](https://lookerstudio.google.com/reporting/b45cbd84-1db9-46cb-b454-6db393eb282e)](guides/images/sample_preview1.png)
 
 
 ## Architecture
@@ -18,7 +18,7 @@ While the following tools are used to setup infrastructure, orchestrate workflow
 - Airflow with Docker - as the orchestrator to manage batch processing workflows packaged in a containerization tool (Docker).
 - Data Build Tool (dbt) - for transforming raw data from in the data warehouse.
 
-![](*insert link for architecture diagram)
+![](guides/images/Architecture_2.png)
 
 
 ## Data Pipeline
