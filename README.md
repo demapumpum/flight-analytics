@@ -7,6 +7,11 @@ Flight Analytics is an end-to-end data pipeline that serves hourly and daily fli
 
 ## Architecture 👷
 
+![](guides/images/Architecture_2.png)
+
+
+## Technologies 👨‍💻
+
 This pipeline is hosted on Google Cloud Platform (GCP) and utilizes the following technologies:
 - Compute Engine - for setting up the VM instance and running the docker container for Airflow.
 - Google Cloud Storage - for serving as the data lake to store flight data pulled from the API.
@@ -17,8 +22,6 @@ While the following tools are used to setup infrastructure, orchestrate workflow
 - Terraform - as the IaC tool used to set up the Google Cloud Storage bucket and the BigQuery datasets.
 - Airflow with Docker - as the orchestrator to manage batch processing workflows packaged in a containerization tool (Docker).
 - Data Build Tool (dbt) - for transforming raw data from in the data warehouse.
-
-![](guides/images/Architecture_2.png)
 
 
 ## Data Pipeline 🔧
