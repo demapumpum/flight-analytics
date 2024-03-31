@@ -7,9 +7,12 @@
 ![](images/dbt_3.png)
 
 Note: This step requires that you clone the project repository to your own repository.
+
 5. Select git clone and paste the SSH key from your repository. Then take note of the deploy key provided.
+   
 6. Head to your GitHub repository and in the Settings tab, navigate to Security > Deploy keys. Select Add deploy key and paste the deploy key provided by dbt cloud. Make sure to select Allow write access.
 ![](images/dbt_5.png)
+
 7. Then in Advanced Settings in dbt Cloud, make sure the project subdirectory is in `dbt`.
 ![](images/dbt_6.png)
 
