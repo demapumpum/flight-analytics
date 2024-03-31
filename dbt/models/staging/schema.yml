@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: staging
-    database: <your-GCP-Project-ID>
+    database: flight-analytics-418504
     schema: flights_stg
 
     tables:
