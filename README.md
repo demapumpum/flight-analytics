@@ -46,5 +46,5 @@ While the following tools are used to setup infrastructure, orchestrate workflow
 - Terraforming the creation of the Compute Engine VM instance.
 - *compact the tables into a single daily external table only → then let looker studio filter the hourly flight data*
 - Use dbt Core instead of dbt Cloud to integrate dbt with Airflow seamlessly.
-~~- Implement data quality checks that ensures data consistency and correctness in the pipeline.~~
+- ~~Implement data quality checks that ensures data consistency and correctness in the pipeline.~~
 - Expanding project scope by covering flight data in more regions or airports in the Philippines.
