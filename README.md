@@ -22,7 +22,7 @@ While the following tools are used to setup infrastructure, orchestrate workflow
 
 ## Architecture 👷
 
-![](guides/images/Architecture_2.png)
+![](guides/images/architecture.png)
 
 
 ## Data Pipeline 🔧
