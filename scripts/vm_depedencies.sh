@@ -47,7 +47,7 @@ eval "$(cat ~/.bashrc | tail -n +10)" # A hack because source .bashrc doesn't wo
 echo "docker-compose version..."
 docker-compose --version
 
-exec bash
+#exec bash
 
 cd bin
 echo "Installing Terraform"
