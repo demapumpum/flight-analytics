@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: staging
-    database: flight-analytics-418504
+    database: flight-analytics-replicate
     schema: flights_stg
 
     tables:
