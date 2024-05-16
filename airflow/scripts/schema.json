@@ -1,0 +1,21 @@
+{
+    "latitude": "float64",
+    "longitude": "float64",
+    "id": "object",
+    "icao_24bit": "object",
+    "heading": "int64",
+    "altitude": "int64",
+    "ground_speed": "int64",
+    "squawk": "object",
+    "aircraft_code": "object",
+    "registration": "object",
+    "time": "int64",
+    "origin_airport_iata": "object",
+    "destination_airport_iata": "object",
+    "number": "object",
+    "airline_iata": "object",
+    "on_ground": "int64",
+    "vertical_speed": "int64",
+    "callsign": "object",
+    "airline_icao": "object"
+}
