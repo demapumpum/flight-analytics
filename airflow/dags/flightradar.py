@@ -1,7 +1,7 @@
 from FlightRadar24 import FlightRadar24API
 import pandas as pd
 from dateutil import tz
-from utils import checkSchema
+from utils import checkSchema, checkJSONSchema
 
 
 class FlightRadar24Client:
@@ -22,9 +22,10 @@ class FlightRadar24Client:
         """
         flights_bounded = self.client.get_flights(bounds = self.getBounds(latitude, longitude, radius))
         flights_in_area = [f.__dict__ for f in flights_bounded]
-        df_flights_in_area = pd.DataFrame.from_dict(flights_in_area)
+        checkJSONSchema(flights_in_area)
 
-        checkSchema(df_flights_in_area.dtypes.to_dict())
+        df_flights_in_area = pd.DataFrame.from_dict(flights_in_area)
+        # checkSchema(df_flights_in_area.dtypes.to_dict())
 
         df_flights_in_area['time'] = pd.to_datetime(df_flights_in_area['time'], unit='s', utc=False).dt.tz_localize('UTC').dt.tz_convert('Asia/Manila').dt.tz_localize(None) 
         df_flights_in_area.to_csv(output, index=False)
